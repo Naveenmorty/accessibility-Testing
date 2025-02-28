@@ -1,0 +1,234 @@
+﻿<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Accessibility Check</title><style>.thumbnail {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAAvCAYAAADzVKS/AAAAh0lEQVR4nO3RQREAIAzAMMC/5yFjfSQKetc7M3NY9bYDMCHBhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHgA/nVBFp0pNo8AAAAAElFTkSuQmCC');
+    border: 1px solid black;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: auto;
+    max-height: 150px;
+}
+
+    .thumbnail:hover {
+        border: 2px solid black;
+    }
+
+.wrap .wrapTwo .wrapThree {
+    margin: 2px;
+    max-width: 70vw;
+}
+
+.wrapOne {
+    margin-left: 1em;
+}
+
+.wrapTwo {
+    margin-left: 2em;
+}
+
+.wrapThree {
+    margin-left: 3em;
+}
+
+.emOne {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.emTwo {
+    margin-left: 2em;
+}
+
+.emThree {
+    margin-left: 3em;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+}
+
+#modalclose {
+    font-family: Lucida Console, sans-serif;
+    font-size: 35px;
+    width: auto;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    cursor: pointer;
+    max-height: 10%;
+}
+
+#modalimage {
+    margin: auto;
+    display: block;
+    max-width: 95%;
+    padding: 10px;
+    max-height: 90%;
+}
+
+.htmlTable {
+    border-top: double lightgray;
+    width: 100%;
+    display: table;
+}
+
+.sectionbutton {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border: 1px solid black;
+}
+
+    .sectionbutton:hover {
+        background-color: #828282;
+    }
+
+.buttonInfoText {
+    width: 50%;
+    float: left;
+}
+
+.buttonExpandoText {
+    text-align: right;
+    width: 50%;
+    float: right;
+}
+
+.majorSection {
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.findings {
+    margin-top: 5px;
+    border-top: 1px solid black;
+}
+
+.active {
+    background-color: #474747;
+    margin-bottom: 0px;
+}
+
+.resultWrapper {
+    margin: 5px;
+}
+
+#context {
+    width: 50%;
+}
+
+#image {
+    width: 50%;
+    height: 220px;
+}
+
+#counts {
+    width: 100%;
+}
+
+#metadata {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+    #metadata {
+        flex-direction: column;
+    }
+
+    #context {
+        width: 100%;
+    }
+
+    #image {
+        width: 100%;
+    }
+}
+</style></head><body><content><h1>Accessibility Check</h1><div id="metadata"><div id="context"><h3>Context:</h3><div class="emOne" id="reportContext">Url: https://wvunited-4-sandbox.wvunited.org/<br>
+Orientation: landscape-primary<br>
+Size: 1036 x 528<br>
+Time: 5/16/2023 10:40:47 AM +00:00<br>
+User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36<br>
+Using: axe-core (4.7.0)
+</div></div><div id="image"><h3>Image:</h3><img class="thumbnail" id="screenshotThumbnail" alt="A Screenshot of the page" width="33%" height="auto"></div><div id="counts"><h3>Counts:</h3><div class="emOne"> Violation: 2<br>
+</div></div></div><div id="results"><div class="resultWrapper"><button class="sectionbutton active"><h2 class="buttonInfoText">Violations: 2</h2><h2 class="buttonExpandoText">-</h2></button><div class="majorSection" id="ViolationsSection"><div class="findings">1: Elements must meet minimum color contrast ratio thresholds<div class="emTwo">Description: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds<br>
+Help: Elements must meet minimum color contrast ratio thresholds<br>
+Help URL: <a href="https://dequeuniversity.com/rules/axe/4.7/color-contrast?application=axeAPI">https://dequeuniversity.com/rules/axe/4.7/color-contrast?application=axeAPI</a><br>
+Impact: serious<br>
+Tags: cat.color, wcag2aa, wcag143, ACT, TTv5, TT13.c<br>
+Element(s):
+</div><div class="htmlTable"><div class="emThree">Html:<p class="wrapOne">&lt;button class=&quot;button button--secondary button--suffix-icon&quot; aria-label=&quot;label text&quot; data-lightbox=&quot;RC_Filters&quot;&gt;Filter&lt;img src=&quot;/assets/icons/chevron-right.svg&quot; width=&quot;8&quot; height=&quot;12&quot; class=&quot;ml-1&quot;&gt;&lt;/button&gt;</p>Selector:<p class="wrapTwo">button[data-lightbox=&quot;RC_Filters&quot;]
+</p>To solve:<p class="wrapTwo"></p><p class="wrapOne">Fix at least one of the following issues:
+<ul>
+<li>SERIOUS: Element has insufficient color contrast of 4.12 (foreground color: #c75300, background color: #f5f5f5, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1</li>
+</ul>
+</p></div></div></div><div class="findings">2: Images must have alternate text<div class="emTwo">Description: Ensures &lt;img&gt; elements have alternate text or a role of none or presentation<br>
+Help: Images must have alternate text<br>
+Help URL: <a href="https://dequeuniversity.com/rules/axe/4.7/image-alt?application=axeAPI">https://dequeuniversity.com/rules/axe/4.7/image-alt?application=axeAPI</a><br>
+Impact: critical<br>
+Tags: cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, ACT, TTv5, TT7.a, TT7.b<br>
+Element(s):
+</div><div class="htmlTable"><div class="emThree">Html:<p class="wrapOne">&lt;img src=&quot;/assets/icons/chevron-right.svg&quot; width=&quot;8&quot; height=&quot;12&quot; class=&quot;ml-1&quot;&gt;</p>Selector:<p class="wrapTwo">button[data-lightbox=&quot;RC_Filters&quot;] &gt; .ml-1[width=&quot;8&quot;][height=&quot;12&quot;]
+</p>To solve:<p class="wrapTwo"></p><p class="wrapOne">Fix at least one of the following issues:
+<ul>
+<li>CRITICAL: Element does not have an alt attribute</li>
+<li>SERIOUS: aria-label attribute does not exist or is empty</li>
+<li>SERIOUS: aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+<li>SERIOUS: Element has no title attribute</li>
+<li>MINOR: Element&#39;s default semantics were not overridden with role=&quot;none&quot; or role=&quot;presentation&quot;</li>
+</ul>
+</p></div></div></div></div></div></div><div id="modal"><div id="modalclose">X</div><img id="modalimage"></div></content><script>var buttons = document.getElementsByClassName("sectionbutton");
+var i;
+
+for (i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function () {
+        var expandoText = this.getElementsByClassName("buttonExpandoText")[0];
+
+        this.classList.toggle("active");
+
+        var content = this.nextElementSibling;
+        if (expandoText.innerHTML === "-") {
+            content.style.maxHeight = 0;
+            expandoText.innerHTML = "+";
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            expandoText.innerHTML = "-";
+        }
+    });
+}
+
+var thumbnail = document.getElementById("screenshotThumbnail");
+var thumbnailStyle = getComputedStyle(thumbnail);
+var modal = document.getElementById("modal");
+var modalimg = modal.getElementsByTagName("img")[0];
+
+modal.addEventListener("click", function () {
+    modal.style.display = "none";
+    modalimg.style.content = "";
+    modalimg.alt = "";
+});
+
+thumbnail.addEventListener("click", function () {
+    modal.style.display = "flex";
+    modalimg.style.content = thumbnailStyle.content;
+    modalimg.alt = thumbnail.alt;
+});</script></body></html>
