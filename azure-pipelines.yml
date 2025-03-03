@@ -30,7 +30,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'accessibility-Testing'
+    SourceFolder: '$(System.DefaultWorkingDirectory)'
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
 - task: PublishBuildArtifacts@1
