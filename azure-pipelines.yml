@@ -16,12 +16,14 @@ steps:
     packageType: 'sdk'
     version: '3.1.x'
   displayName: 'Run a one-line script'
+- task: SonarCloudAnalyze@3
+  inputs:
+    jdkversion: 'JAVA_HOME_17_X64'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
     projects: '**/*.csproj'
     feedsToUse: 'select'
-
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
